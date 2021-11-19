@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-const Container = styled.div`
+const Container = styled.header`
   padding-top: 10%;
   padding-bottom: 10%;
   display: flex;
