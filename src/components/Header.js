@@ -1,8 +1,8 @@
 import styled from '@emotion/styled'
 
 const Container = styled.header`
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
