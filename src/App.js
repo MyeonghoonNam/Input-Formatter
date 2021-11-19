@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import { Global } from '@emotion/react'
+import { GlobalStyles } from './styles/GlobalStyles'
 
 const Header = styled.div`
   padding-bottom: 10%;
@@ -26,6 +28,7 @@ const Description = styled.div`
 function App() {
   return (
     <>
+      <Global styles={GlobalStyles} />
       <Header>
         <Title>Formatter</Title>
         <Description>
