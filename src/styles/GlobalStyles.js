@@ -11,6 +11,9 @@ export const GlobalStyles = css`
     -webkit-font-smoothing: antialiased;
   }
 
+  body {
+    background: #e9ecef;
+  }
   a {
     text-decoration: none;
     color: inherit;
