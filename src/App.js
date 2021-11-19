@@ -1,24 +1,38 @@
-import logo from './logo.svg'
-import './App.css'
+import React from 'react'
+import styled from '@emotion/styled'
+
+const Header = styled.div`
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+`
+
+const Title = styled.div`
+  font-size: 148px;
+  font-family: 'Pathway Gothic One', sans-serif;
+`
+
+const Description = styled.div`
+  margin-top: 30px;
+  font-size: 22px;
+
+  span {
+    color: green;
+  }
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header>
+        <Title>Formatter</Title>
+        <Description>
+          Format your &lt;<span>input</span>/&gt; content when you are typing
+        </Description>
+      </Header>
+    </>
   )
 }
 
