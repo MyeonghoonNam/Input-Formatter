@@ -1,13 +1,13 @@
 import React from 'react'
 import { Global } from '@emotion/react'
 import { GlobalStyles } from './styles/GlobalStyles'
-import Header from './components/Header'
+import FormatterTemplate from './components/FormatterTemplate'
 
 function App() {
   return (
     <>
       <Global styles={GlobalStyles} />
-      <Header />
+      <FormatterTemplate></FormatterTemplate>
     </>
   )
 }
