@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import styled from '@emotion/styled'
 
 const Container = styled.article`
@@ -32,10 +32,16 @@ const Input = styled.input`
 const Formatter = ({ formatter }) => {
   const { type, title, message } = formatter
 
+  const [value, setValue] = useState('')
+
+  const onChange = useCallback((e) => {
+    setValue(e.target.value)
+  }, [])
+
   return (
     <Container>
       <Title>{title}</Title>
-      <Input placeholder={message} />
+      <Input placeholder={message} onChange={onChange} value={value} />
     </Container>
   )
 }
