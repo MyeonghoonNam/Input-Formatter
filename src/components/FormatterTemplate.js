@@ -1,15 +1,15 @@
-import React from 'react'
 import styled from '@emotion/styled'
 import Header from './Header'
 
 const Container = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 `
 
 const Content = styled.main`
   display: flex;
+  justify-content: center;
 `
 
 const FormatterTemplate = ({ children }) => {
