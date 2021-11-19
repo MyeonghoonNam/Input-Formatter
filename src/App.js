@@ -4,6 +4,7 @@ import { Global } from '@emotion/react'
 import { GlobalStyles } from './styles/GlobalStyles'
 
 const Header = styled.div`
+  padding-top: 10%;
   padding-bottom: 10%;
   display: flex;
   flex-direction: column;
