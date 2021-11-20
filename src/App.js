@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Global } from '@emotion/react'
 import { GlobalStyles } from './styles/GlobalStyles'
 import FormatterTemplate from './components/FormatterTemplate'
