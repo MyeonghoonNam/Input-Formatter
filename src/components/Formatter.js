@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import styled from '@emotion/styled'
+import { getFormatInfo } from '../utils/getFormatInfo'
 
 const Container = styled.article`
   padding: 60px 0;
@@ -34,9 +35,14 @@ const Formatter = ({ formatter }) => {
 
   const [value, setValue] = useState('')
 
-  const onChange = useCallback((e) => {
-    setValue(e.target.value)
-  }, [])
+  const onChange = useCallback(
+    (e) => {
+      const newValue = getFormatInfo(type, e.target.value)
+
+      setValue((value) => (value = newValue))
+    },
+    [type],
+  )
 
   return (
     <Container>
