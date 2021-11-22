@@ -1,6 +1,7 @@
 import { creditCardFormat } from '../utils/creditCardFormat'
 import { phoneFormat } from './phoneFormat'
 import { dateFormat } from './dateFormat'
+import { timeFormat } from './timeFormat'
 
 export const getFormatInfo = (type, value) => {
   switch (type) {
@@ -11,7 +12,7 @@ export const getFormatInfo = (type, value) => {
     case 'date':
       return dateFormat(value)
     case 'time':
-      break
+      return timeFormat(value)
     default:
   }
 }
