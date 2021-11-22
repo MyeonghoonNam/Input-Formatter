@@ -6,16 +6,16 @@ export const dateFormat = (value) => {
   let newValue = value.replace(/[^0-9]/g, '')
   let temp = ''
 
-  if (value.length < 4) {
+  if (value.length < 5) {
     return newValue
-  } else if (value.length < 6) {
+  } else if (value.length < 8) {
     temp += newValue.substring(0, 4)
     temp += '-'
     temp += newValue.substring(4)
   } else {
     temp += newValue.substring(0, 4)
     temp += '-'
-    temp += newValue.substring(4, 2)
+    temp += newValue.substring(4, 6)
     temp += '-'
     temp += newValue.substring(6)
   }
