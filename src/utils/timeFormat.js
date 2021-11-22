@@ -1,4 +1,8 @@
 export const timeFormat = (value) => {
+  if (value.length > 8) {
+    return value.substring(0, 8)
+  }
+
   let newValue = value.replace(/[^0-9]/g, '')
   let temp = ''
 
